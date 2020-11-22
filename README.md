@@ -1,9 +1,10 @@
-# rumor algorithm
-Rumor Algorithm is a heuristic algorithm for solving TSP problems (directed and undirected).
+# Rumor Algorithm
 
-It is based on the idea that, experiences of humans in a population effect the decisions of others. Conveying the experiences to the others (rumor) basically makes new decisions positively or negatively biased.
+Rumor Algorithm is a heuristic algorithm for solving TSP problems (both directed and undirected graphs).
 
-For the min weighted TSP problem setting, experiences are the routes taken and their associated total weights (distance, cost, time etc.) Collection of rumors  about these routes (sequence of nodes that form a hamiltonian cycle) generates influence the next group of humans in their decions of route selections. Greedy algorithm selects the minimum distance arc at each node and this often leads to very suboptimal solutions (unless luckily finds a good solution by chance. Algorithms such as Ant Colony Optimiztion (ACO) and Artificial Bee Colony (ABC) mimic the behavior of ant and bee colonies by using passing experiences and collective knowladge gained to the colony and 's next       
+It is based on the idea that, experiences of humans in a population effect the decisions of others. Conveying the experiences to the others (rumor) basically makes new decisions positively or negatively biased. Influence factor of these experiences is not linear and often experiences are evaluated with respect to the average, the best and the worst outcomes of these experiences. 
+
+For the min weighted TSP problem setting, experiences are the routes taken (arc sequence) and their associated total weights (distance, cost, time etc.), that is the outcome. Collection of rumors about these routes (sequence of nodes that form a hamiltonian cycle) generates influence on the next group of humans and effect their decions in route selection. Greedy algorithms selects the minimum weighted arc at each node and this often leads to very suboptimal solutions (unless, luckily finds a good solution by chance). Algorithms such as Ant Colony Optimiztion (ACO) and Artificial Bee Colony (ABC) mimic the behavior of ant and bee colonies by using passing experiences and collective knowladge gained to the colony for making better and better decisions in time. Rumor algorithm,       
 
 In Rumor Algorithm, these groups of people are represented as populations in human waves. A human wave is a collection of humans seeking for a feasible tsp route.
 
